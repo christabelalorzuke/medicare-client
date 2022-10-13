@@ -11,7 +11,7 @@ const About = () => {
 				<span className="hero-section-content">
 					<h1>Meet our awesome team</h1>
 					<p>
-						<i>PASQO is developed and maintained by a small but amazing team of developers.</i>
+						<i>MEDICAL is developed and maintained by a small but amazing team of developers.</i>
 					</p>
 				</span>
 				<span className="hero-section-image">
