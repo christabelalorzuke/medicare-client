@@ -17,9 +17,15 @@ const Navbar = () => {
 							Home
 						</span>
 					</Link>
-					<span className="features">Features</span>
-					<span className="about-us">About Us</span>
-					<span className="contact-us">Contact Us</span>
+					<Link to="/features">
+						<span className="features">Features</span>
+					</Link>
+					<Link to="/about">
+						<span className="about-us">About Us</span>
+					</Link>
+					<Link to="/contact">
+						<span className="contact-us">Contact Us</span>
+					</Link>
 				</span>
 			</span>
 			<span className="signup-and-login">

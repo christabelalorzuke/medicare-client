@@ -3,14 +3,14 @@ import { ReactComponent as HeroSectionImage } from "./undraw_doctor.svg";
 import { ReactComponent as Section1Image } from "./undraw_profile_data.svg";
 import { ReactComponent as Section2Image } from "./undraw_medicine.svg";
 import { ReactComponent as Section3Image } from "./undraw_online_meeting.svg";
-import Navbar from "./Navbar";
+import Navbar from "../Navbar";
 
 const Home = () => {
 	return (
-		<div className="container">
+		<div className="home-container">
 			<Navbar />
-			<div className="hero-section">
-				<span className="hero-section-content">
+			<div className="home-hero-section">
+				<span className="home-hero-section-content">
 					<h1>Hi! Welcome to MEDICARE</h1>
 					<p>
 						<i>
@@ -18,22 +18,22 @@ const Home = () => {
 							Speak with a verified health professional now!
 						</i>
 					</p>
-					<div className="call-to-action">
+					<div className="home-call-to-action">
 						<span>Why don't you go ahead and...</span>
-						<button className="call-to-action-btn">book a session</button>
+						<button className="home-call-to-action-btn">book a session</button>
 					</div>
 				</span>
-				<span className="hero-section-image">
+				<span className="home-hero-section-image">
 					<HeroSectionImage />
 				</span>
 			</div>
-			<div className="content-section">
+			<div className="home-content-section">
 				<h1>How it works</h1>
-				<section className="section1">
-					<span className="section-image">
+				<section className="home-section1">
+					<span className="home-section-image">
 						<Section1Image />
 					</span>
-					<span className="section-content">
+					<span className="home-section-content">
 						<h3>~ CREATE A PROFILE ~</h3>
 						<br />
 						<p>
@@ -43,8 +43,8 @@ const Home = () => {
 						</p>
 					</span>
 				</section>
-				<section className="section2">
-					<span className="section-content">
+				<section className="home-section2">
+					<span className="home-section-content">
 						<h3>~ BOOK A SESSION ~</h3>
 						<br />
 						<p>
@@ -53,15 +53,15 @@ const Home = () => {
 							proceed to book a session based on the professional's availability.
 						</p>
 					</span>
-					<span className="section-image">
+					<span className="home-section-image">
 						<Section2Image />
 					</span>
 				</section>
-				<section className="section3">
-					<span className="section-image">
+				<section className="home-section3">
+					<span className="home-section-image">
 						<Section3Image />
 					</span>
-					<span className="section-content">
+					<span className="home-section-content">
 						<h3>~ VIDEO CHAT ~</h3>
 						<br />
 						<p>
@@ -73,7 +73,7 @@ const Home = () => {
 					</span>
 				</section>
 			</div>
-			<div className="footer-section"></div>
+			<div className="home-footer-section"></div>
 		</div>
 	);
 };

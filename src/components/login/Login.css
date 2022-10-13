@@ -2,7 +2,7 @@
 	background-color: #eaf5f2;
 	color: #575153;
 	height: 100vh;
-	padding-top: 30px; 
+	padding-top: 30px;
 }
 
 .call-to-register p {
@@ -10,9 +10,86 @@
 	font-size: 1.2rem;
 	font-weight: 500;
 	color: #676767;
-      padding-top: 30px;
+	padding-top: 10px;
 }
 .call-to-register p a {
 	color: #9e4f8f;
 	cursor: pointer;
+}
+
+.login-btn {
+	width: 70%;
+	margin: auto;
+	height: 45px;
+	border-color: transparent;
+	cursor: pointer;
+}
+.login-btn button {
+	background-color: #9e4f8f;
+	color: white;
+	font-size: 1em;
+	font-weight: 700;
+	width: 100%;
+	height: 100%;
+	border-radius: 50px;
+	transition: ease-in-out 0.3s;
+}
+.login-btn button:hover {
+	background-color: #974187;
+	transition: ease-in-out 0.3s;
+}
+
+/* =========================
+   TOGGLE SWITCH UI BUTTONS
+   ========================= */
+
+.final__toggle-1 {
+	font-family: Helvetica, Arial, sans-serif;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 15px 0 0;
+}
+.final__toggle-1__input {
+	display: none;
+}
+.final__toggle-1__button {
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	background-color: #9c263b;
+	border: 1px solid #9c263b;
+	color: white;
+	width: 80px;
+	height: 30px;
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+.final__toggle-1__button:before {
+	position: absolute;
+	top: 6px;
+	left: 40px;
+	right: auto;
+	display: inline-block;
+	height: 20px;
+	padding: 0 3px;
+	background-color: white;
+	color: #9c263b;
+	content: "off";
+	transition: all 0.3s ease;
+}
+.final__toggle-1__input:checked + .final__toggle-1__button {
+	background-color: #40844e;
+	border: 1px solid #40844e;
+}
+.final__toggle-1__input:checked + .final__toggle-1__button:before {
+	left: 5px;
+	content: "on";
+	color: #40844e;
+}
+.remember-me {
+	font-size: 1.2rem;
+	font-weight: 500;
+	color: #575153;
 }

@@ -11,7 +11,7 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	height: 100%;
+	height: 90%;
 	width: 50%;
 	padding-top: 5%;
 }
@@ -25,43 +25,6 @@
 	font-weight: 500;
 }
 
-.call-to-action {
-	display: flex;
-	justify-items: center;
-	align-items: center;
-	height: 50px;
-}
-.call-to-action > :first-child {
-	width: 65%;
-	height: 100%;
-	padding-top: 6px;
-	color: #1c5728;
-	font-size: 1.6em;
-	font-style: italic;
-	text-align: center;
-	background-color: #fff;
-	border-top-left-radius: 50px;
-	border-bottom-left-radius: 50px;
-}
-.call-to-action-btn {
-	height: 100%;
-	width: 35%;
-	font-weight: 700;
-	font-style: italic;
-	color: white;
-	font-size: 1.4em;
-	background-color: #9e4f8f;
-	border-color: transparent;
-	border-bottom-right-radius: 50px;
-	border-top-right-radius: 50px;
-	transition: ease-in-out 0.3s;
-}
-.call-to-action-btn:hover {
-	cursor: pointer;
-	background-color: #974187;
-	transition: ease-in-out 0.3s;
-}
-
 .hero-section-image {
 	height: 100%;
 	width: 50%;
@@ -70,6 +33,7 @@
 	width: 100%;
 	height: 100%;
 }
+
 
 /* Content Section */
 
@@ -80,17 +44,22 @@
 }
 .content-section section {
       display: flex;
-      justify-content: space-between;
-      height: 90vh;
+	flex-direction: column;
+      justify-content: flex-start;
+      height: 110vh;
       padding: 20px 10%;
 }
-.content-section>h1 {
-      padding-top: 50px;
+.content-section section .section-title {
+      padding-top: 20px;
 	text-align: center;
 	font-family: "Roboto Slab";
 	font-size: 3em;
 	font-weight: 700;
-      background-color: #eaf5f2;
+      /* background-color: #eaf5f2; */
+}
+.content-section section .section-body {
+	display: flex;
+	height: 100%;
 }
 
 .section-image, .section-content {
@@ -100,7 +69,7 @@
 
 .section-image > :first-child {
       width: 100%;
-	height: 95%;
+	height: 90%;
 }
 
 .section-content {
