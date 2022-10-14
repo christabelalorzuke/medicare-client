@@ -17,7 +17,7 @@ const SideNavigation = () => {
 			</div>
 			<div className="nav-body">
 				<div className="navigation-items">
-					<Link className="nav-item">
+					<Link to="/dashboard" className="nav-item">
 						<span className="dashboard">
 							<FontAwesomeIcon className="nav-item-icon" icon={solid("chart-bar")} fixedWidth="true" />
 							DASHBOARD
