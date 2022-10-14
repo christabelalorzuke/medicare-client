@@ -12,7 +12,7 @@
       align-items: center;
       padding: 20px;
       width: 40%;
-      height: 500px;
+      min-height: 500px;
       border: .5px solid rgb(204, 204, 204);
       background-color: white;
       border-radius: 10px;
@@ -30,9 +30,11 @@
 }
 
 .dev-profile img{
+      object-fit: cover;
       border-radius: 50%;
       height: 200px;
       width: 200px;
+
 }
 
 .dev-profile .body{
