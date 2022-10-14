@@ -43,7 +43,7 @@ const SideNavigation = () => {
 							PROFILE
 						</span>
 					</Link>
-					<Link to="/users/:id" className="nav-item">
+					<Link to="/changepassword" className="nav-item">
 						<span className="change-password">
 							<FontAwesomeIcon className="nav-item-icon" icon={solid("user-secret")} fixedWidth="true" />
 							CHANGE PASSWORD

@@ -8,6 +8,7 @@ import Features from "../components/hompage_components/features/Features";
 import About from "../components/hompage_components/about/About";
 import Contact from "../components/hompage_components/contact/Contact";
 import AllProfessionals from "../components/main_app_components/users/All_professionals";
+import ChangePassword from "../components/main_app_components/users/profile/ChangePassword";
 
 const MyRoutes = () => {
 	return (
@@ -21,6 +22,7 @@ const MyRoutes = () => {
 			<Route path="/dashboard" element={<Dashboard />} />
 			<Route path="/users" element={<AllProfessionals />} />
 			<Route path="/users/:id" element={<Profile />} />
+			<Route path="/changepassword" element={<ChangePassword />} />
 		</Routes>
 	);
 };

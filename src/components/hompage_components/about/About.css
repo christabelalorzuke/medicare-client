@@ -1,0 +1,40 @@
+
+.section-body{
+      width: 100% auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+.dev-profile{
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+      padding: 20px;
+      width: 40%;
+      height: 500px;
+      border: .5px solid rgb(204, 204, 204);
+      background-color: white;
+      border-radius: 10px;
+}
+
+.dev-profile h4{
+      font-size: 32px;
+      font-weight: bold;
+}
+
+.dev-profile .header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.dev-profile img{
+      border-radius: 50%;
+      height: 200px;
+      width: 200px;
+}
+
+.dev-profile .body{
+      text-align: center;
+}
