@@ -1,27 +1,10 @@
 import "./Signup.css";
 
-import { useState } from "react";
 import Navbar from "../hompage_components/Navbar";
-import TypeOfUserDropdown from "../profile/TypeOfUserDropdown";
+// import TypeOfUserDropdown from "../main_app_components/users/profile/TypeOfUserDropdown";
 import { Link } from "react-router-dom";
 
 const Signup = () => {
-	const typeOfUsers = {
-		doctor: "doctor",
-		patient: "patient",
-	};
-
-	const options = [
-		{ label: "Doctor", value: typeOfUsers.doctor },
-		{ label: "Patient", value: typeOfUsers.patient },
-	];
-
-	const [selectedValue, setSelectedValue] = useState(typeOfUsers.patient);
-
-	const handleTypeOfUserChange = (triggeredEvent) => {
-		setSelectedValue(triggeredEvent.target.value);
-	};
-
 	return (
 		<div className="signup-page">
 			<Navbar />
@@ -35,10 +18,7 @@ const Signup = () => {
 						<div className="tw-flex tw-flex-col tw-mb-4 tw-py-2">
 							<input className="tw-border-solid tw-border-b-2" placeholder="Email" type="email" />
 						</div>
-						<div className="tw-flex tw-flex-col tw-mb-4 tw-py-2">
-							<input className="tw-border-solid tw-border-b-2" placeholder="Username" type="text" />
-						</div>
-						<TypeOfUserDropdown options={options} value={selectedValue} onChange={handleTypeOfUserChange} />
+						{/* <TypeOfUserDropdown /> */}
 						<div className="tw-flex tw-flex-col tw-py-2 tw-mb-4">
 							<input className="tw-border-solid tw-border-b-2" placeholder="Password" type="password" />
 						</div>
@@ -46,9 +26,18 @@ const Signup = () => {
 							<input className="tw-border-solid tw-border-b-2" placeholder="Confirm password" type="password" />
 						</div>
 						<div className="signup-btn">
-							<Link to="">
+							<Link to="/users/:id">
 								<button>Signup</button>
 							</Link>
+						</div>
+						<div class="call-to-register">
+							<p>
+								Already have an account?
+								<br />
+								<b>
+									<Link to="/login">Login</Link>
+								</b>
+							</p>
 						</div>
 					</div>
 				</form>

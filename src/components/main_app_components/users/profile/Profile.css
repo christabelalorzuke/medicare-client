@@ -1,0 +1,118 @@
+.profile-container {
+	/* border: 1px solid red; */
+	width: 100%;
+	height: 130vh;
+	border-radius: 10px;
+	padding: 0 10px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* ///////////////////////////////////////////////////// */
+/* Profile Header */
+/* ///////////////////////////////////////////////////// */
+
+.profile-container .profile-header-container {
+	display: flex;
+	flex-direction: column;
+
+	/* border: 1px solid yellow; */
+	width: 100%;
+	height: 30%;
+}
+
+.profile-container .profile-header-container .background-img-container {
+	background-color: aliceblue;
+	height: 70%;
+	z-index: 0;
+}
+
+.profile-container .profile-header-container .profile-picture-and-edit-btn-container {
+	display: flex;
+	justify-content: space-between;
+	position: absolute;
+	top: 100px;
+}
+
+.profile-container .profile-header-container .profile-picture-and-edit-btn-container .profile-picture-container {
+	height: 150px;
+	width: 150px;
+	border: 5px solid white;
+	border-radius: 50%;
+	background-color: aquamarine;
+
+	z-index: 1;
+	position: relative;
+	left: 15px;
+}
+
+.profile-container .profile-header-container .profile-picture-and-edit-btn-container .edit-btn-container {
+	display: block;
+	width: 750px;
+	margin-left: 10px;
+	/* border: 1px solid red; */
+}
+.edit-btn-container button {
+	float: right;
+	margin-top: 100px;
+
+	height: 30px;
+	width: 120px;
+	border-radius: 5px;
+	/* background-color: rgb(2, 2, 184); */
+	opacity: 0.8;
+	color: white;
+	font-weight: 600;
+}
+.edit-btn-container button > :first-child {
+	margin-right: 5px;
+}
+
+/* ///////////////////////////////////////////////////// */
+/* Profile Body */
+/* ///////////////////////////////////////////////////// */
+
+.profile-container .profile-body {
+	/* border: 1px solid green; */
+	display: flex;
+	justify-content: space-between;
+
+	height: 65%;
+}
+
+input {
+      height: 30px;
+      padding: 0 10px;
+}
+.form-one,
+.form-two {
+	padding-top: 10px;
+	border-radius: 10px;
+	background-color: #f1f4f869;
+}
+.form-one {
+	width: 55%;
+}
+
+.form-two {
+	width: 40%;
+}
+
+input:disabled {
+	background-color: white;
+}
+
+.medical-history-btn {
+	height: 30px;
+	width: 200px;
+	border-radius: 5px;
+	background-color: rgb(2, 2, 184);
+	opacity: 0.8;
+	color: white;
+	font-weight: 600;
+}
+.medical-history-btn > :first-child {
+	margin-right: 5px;
+}

@@ -1,25 +1,9 @@
 import Navbar from "../hompage_components/Navbar";
 import "./Login.css";
-import TypeOfUserDropdown from "../profile/TypeOfUserDropdown";
-import { useState } from "react";
+// import TypeOfUserDropdown from "../main_app_components/users/profile/TypeOfUserDropdown";
 import { Link } from "react-router-dom";
 
 const Login = () => {
-	const typeOfUsers = {
-		doctor: "doctor",
-		patient: "patient",
-	};
-
-	const options = [
-		{ label: "Doctor", value: typeOfUsers.doctor },
-		{ label: "Patient", value: typeOfUsers.patient },
-	];
-
-	const [selectedValue, setSelectedValue] = useState(typeOfUsers.patient);
-
-	const handleTypeOfUserChange = (triggeredEvent) => {
-		setSelectedValue(triggeredEvent.target.value);
-	};
 
 	return (
 		<div>
@@ -31,13 +15,11 @@ const Login = () => {
 						<div className="tw-flex tw-flex-col tw-mb-4 tw-py-2">
 							<input className="tw-border-solid tw-border-b-2" placeholder="Username" type="text" />
 						</div>
-						<TypeOfUserDropdown options={options} value={selectedValue} onChange={handleTypeOfUserChange} />
+						{/* <TypeOfUserDropdown /> */}
 						<div className="tw-flex tw-flex-col tw-py-2 tw-mb-4">
 							<input className="tw-border-solid tw-border-b-2" placeholder="Password" type="password" />
 						</div>
-						<div className="tw-flex tw-flex-col tw-py-2 tw-mb-5">
-							<input className="tw-border-solid tw-border-b-2" placeholder="Confirm password" type="password" />
-						</div>
+						<br />
 						<div className="custom-control custom-checkbox">
 							<label class="final__toggle-1 remember-me" for="Check">
 								<input type="checkbox" class="final__toggle-1__input" id="Check" name="RememberMe" />
@@ -46,6 +28,8 @@ const Login = () => {
 							<span class="remember-me">Remember me</span>
 						</div>
 						<br />
+						<br />
+						{/* <br /> */}
 						<div className="login-btn">
 							<Link to="/dashboard">
 								<button>Login</button>

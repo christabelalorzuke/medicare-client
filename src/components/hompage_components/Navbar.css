@@ -24,6 +24,10 @@
       align-items: center;
 }
 
+.logo > :first-child {
+	font-weight: 600 !important;
+}
+
 /* Navigation items */
 .nav-items {
 	display: flex;

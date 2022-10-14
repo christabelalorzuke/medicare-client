@@ -8,7 +8,10 @@ const Navbar = () => {
 		<nav className="navbar">
 			<span className="logo-and-nav-items-container">
 				<span className="logo">
-					<h4>MEDICARE</h4>
+					<h4>
+						<FontAwesomeIcon icon={solid("stethoscope")} fixedWidth="true" color="red"/>
+						MEDICARE
+					</h4>
 				</span>
 				<span className="nav-items">
 					<Link to="/">
