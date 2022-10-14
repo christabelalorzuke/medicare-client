@@ -46,8 +46,7 @@ const About = () => {
 								<h4>David</h4>
 							</div>
 							<p className="body">
-								Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad tenetur quo corporis, unde hic quisquam at sunt officia suscipit veniam
-								nemo voluptates porro consequatur quae veritatis provident error perferendis soluta?
+							I am a compassionate Medical Doctor and Sport Physiotherapy Practitioner with a successful background in diagnosis, treatment, and management of patient illnesses and diseases. I am a software developer as well and passionate about getting each citizen a hospital and a doctor by 2025 by using software to make healthcare easily accessible.
 							</p>
 						</span>
 					</div>
